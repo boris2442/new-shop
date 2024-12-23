@@ -9,6 +9,7 @@
     list-style: none;
     font-family:'Parkinsans', Arial, Helvetica, sans-serif;
 }
+
 :root{
     --main:#ff8000;
     --main2:#a33f18;
@@ -27,7 +28,17 @@ img{
 section{
     padding: 50px 100px;
 }
-
+.btn{
+    padding: 10px 15px;
+    background: var(--main);
+    color:var(--bg);
+    transition: 0.5s ease-in-out;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+.btn:hover{
+    background: var(--main2);
+}
 /* [partie destinee au header/  navigation */
 nav{
     position: fixed;
@@ -177,4 +188,41 @@ nav.active{
    .navigation.active{
     left: 0;
    }
+  }
+
+  /* section home */
+
+  .home{
+    width: 100%;
+    min-height: 150px;
+    display: grid;
+    gap:1rem;
+    background: rgb(240, 234, 210);
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+  }
+  .home h1{
+    font-size:clamp(30px, 5vw, 60px) ;
+    letter-spacing: 1px;
+  }
+  .home h1 span{
+color:var(--main);
+
+  }
+  .home p{
+    max-width: 80%;
+    margin: 1rem 0rem 2rem;
+
+    font-size: 0.9rem;
+  }
+  .home img{
+    animation: first-animation 3s linear infinite;
+  }
+  @keyframes first-animation{
+    0%, 100%{
+        transform: translateY(-3.5rem);
+    }
+   50%{
+        transform: translateY(1rem);
+    }
   }
