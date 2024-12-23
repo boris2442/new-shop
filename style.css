@@ -156,39 +156,6 @@ nav.active{
   .search-content.active{
     right:1rem;
   }
- /* #######################  */
-  /* partie responsive du header */
-  
-  @media screen and (max-width:1058px) {
-    nav{
-        padding: 16px 60px;
-    }
-  }
-  @media screen and (max-width:991px) {
-    nav{
-        padding: 50px 4%;
-    }
-  }
-  @media screen and (max-width:880px) {
-   #burger-menu{
-    display: block;
-   }
-   .navigation{
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    background-color: var(--bg);
-    left: -100%;
-    padding: 1rem 2rem;
-    width: 280px;
-    transition: .5s ease-in-out;
-    height: 100vh;
-    border-right: 1px solid var(--main);
-   }
-   .navigation.active{
-    left: 0;
-   }
-  }
 
   /* section home */
 
@@ -341,7 +308,7 @@ color:var(--main);
     object-fit: cover;
     margin-bottom: 0.5rem;
  }
- .avis-box .star .bx{
+ .avis-box .start .bx{
     color:orange;
  }
  .avis-box h4{
@@ -359,11 +326,12 @@ color:var(--main);
  /* partie destinee au footer */
  
  footer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-    gap:1rem;
-    background-color: rgb(247, 234, 210);
-    padding: 2rem 1rem;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+     gap:1rem;
+     background-color: rgb(247, 234, 210);
+     padding: 2rem 1rem;
+ margin-top: 60px;
  }
  footer .social{
     display: flex;
@@ -382,3 +350,89 @@ color:var(--main);
     transition: 0.5s ease-in-out;
     border-radius: 50%;
  }
+ footer .social .bx:hover{
+    background-color: var(--main2);
+ }
+ footer .footer-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ footer .footer-box a{
+    color:var(--main);
+ }
+ footer .footer-box a:hover{
+    color:var(--main2);
+ }
+ footer .footer-box p{
+    font-size: 13px;
+ }
+ footer .footer-box p i{
+    font-size: 1rem;
+    margin-right: 8px;
+ }
+ footer h5{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color:var(--text);
+ }
+
+ .copy{
+    text-align: center;
+padding: 2rem 1rem;
+background: var(--main);
+color:var(--bg);
+ }
+
+
+  /* #######################  */
+  /* partie responsive du header */
+  
+  @media screen and (max-width:1058px) {
+    nav{
+        padding: 16px 16px;
+    }
+    section{
+        padding: 50px 60px;
+    }
+  }
+  @media screen and (max-width:991px) {
+    section{
+        padding: 50px 4%;
+    }
+    .products-contener{
+        grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+    }
+  }
+  @media screen and (max-width:880px) {
+.home-content{
+padding-top: 5rem;
+
+
+}
+
+   #burger-menu{
+    display: block;
+   }
+   .navigation{
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: var(--bg);
+    left: -100%;
+    padding: 1rem 2rem;
+    width: 280px;
+    transition: .5s ease-in-out;
+    height: 100vh;
+    border-right: 1px solid var(--main);
+   }
+   .navigation.active{
+    left: 0;
+   }
+   .about{
+    text-align: center;
+   }
+   .about img{
+    order: 2;
+   }
+  }
