@@ -312,3 +312,49 @@ color:var(--main);
     padding: 1rem;
     transition: 0.5s ease-in-out;
   }
+  .products-box .bx:hover{
+    background: var(--main2);
+  }
+
+  /* section avis */
+
+ .avis-contener{
+    display: grid;
+    align-items: center;
+    gap:1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px,auto));
+ }
+ .avis-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 3px solid var(--main);
+ }
+ .avis-box img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+ }
+ .avis-box .star .bx{
+    color:orange;
+ }
+ .avis-box h4{
+   font-size:  clamp(15px,4vw, 20px );
+ }
+ .avis-box p{
+    font-size: 1rem;
+    margin-top: 8px;
+ }
+ .avis-contener .avis-box:hover{
+    background-color: rgb(247, 234, 210);
+ }
+
+
+ /* partie destinee au footer */
+ 
