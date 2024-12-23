@@ -385,8 +385,10 @@ color:var(--bg);
  }
 
 
-  /* #######################  */
-  /* partie responsive du header */
+ 
+  /*####################### 
+                         partie responsive du header
+                                                 #######################    */
   
   @media screen and (max-width:1058px) {
     nav{
