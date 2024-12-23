@@ -39,7 +39,9 @@ section{
 .btn:hover{
     background: var(--main2);
 }
-/* [partie destinee au header/  navigation */
+/* #######################  
+              [partie destinee au header/  navigation
+                                                     #######################   */
 nav{
     position: fixed;
     z-index: 1000;
@@ -157,7 +159,9 @@ nav.active{
     right:1rem;
   }
 
-  /* section home */
+  /* #######################  
+                              section home
+                                           #######################   */
 
   .home{
     width: 100%;
@@ -195,7 +199,9 @@ color:var(--main);
   }
 
 
-  /* section about */
+  /*#######################  
+                            section about
+                                           #######################  */
 
   .about{
     display: grid;
@@ -219,7 +225,9 @@ color:var(--main);
   }
 
 
-  /* section ptoducts */
+  /* ####################### 
+                              section ptoducts
+                                                 #######################   */
 
   .section-heading{
     text-align: center;
@@ -283,7 +291,9 @@ color:var(--main);
     background: var(--main2);
   }
 
-  /* section avis */
+  /*#######################  
+                             section avis
+                                          #######################   */
 
  .avis-contener{
     display: grid;
@@ -323,7 +333,9 @@ color:var(--main);
  }
 
 
- /* partie destinee au footer */
+ /* #######################   
+                           partie destinee au footer
+                                                     #######################   */
  
  footer{
      display: grid;
@@ -387,7 +399,7 @@ color:var(--bg);
 
  
   /*####################### 
-                         partie responsive du header
+                              partie responsive 
                                                  #######################    */
   
   @media screen and (max-width:1058px) {
