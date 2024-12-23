@@ -5,6 +5,10 @@ const searchContent=document.querySelector(".search-content");
 const btnSearch=document.querySelector("#btn-search");
 const btnBurger=document.querySelector("#burger-menu");
 
+if(window.scrollY==0){
+header.classList.toggle("active")
+}
+
 btnBurger.addEventListener("click",()=>{
     nav.classList.toggle("active")
     btnBurger.classList.toggle("bx-x")
@@ -28,5 +32,9 @@ btnSearch.addEventListener("click", ()=>{
 window.addEventListener("scroll", ()=>{
     nav.classList.remove("active")
     btnBurger.classList.remove("bx-x")
+});
+window.addEventListener("scroll", ()=>{
+    header.classList.toggle("active, window.scrollY>0")
 })
+
 
