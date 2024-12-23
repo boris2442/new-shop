@@ -358,3 +358,27 @@ color:var(--main);
 
  /* partie destinee au footer */
  
+ footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap:1rem;
+    background-color: rgb(247, 234, 210);
+    padding: 2rem 1rem;
+ }
+ footer .social{
+    display: flex;
+    column-gap: 0.5rem;
+    margin-top: 1rem;
+
+ }
+ footer .social .bx{
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--main);
+    color:var(--bg);
+    transition: 0.5s ease-in-out;
+    border-radius: 50%;
+ }
