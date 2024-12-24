@@ -66,3 +66,7 @@ const app=new Typewriter (title, {
 .start();
 
 
+
+// partie destinee au swiper library 
+
+
