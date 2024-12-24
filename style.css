@@ -175,6 +175,7 @@ nav.active{
   .home h1{
     font-size:clamp(30px, 5vw, 60px) ;
     letter-spacing: 1px;
+  
   }
   .home h1 span{
 color:var(--main);

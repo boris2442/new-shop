@@ -55,5 +55,14 @@ const scrollActive=()=>{
 
 }
 window.addEventListener("scroll",scrollActive)
+const title=document.getElementById("title")
+const app=new Typewriter (title, {
+    loop:true,
+    delay:100
+})
+.typeString("La Galerie <br>des Sacs <span style='color:black'> élégants!</span>")
+.pauseFor(2000)
+.deleteAll()
+.start();
 
 
