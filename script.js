@@ -73,7 +73,11 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
+    delay:2500,
+    autoplay:{
+        disableOnInteraction: false, 
+    },
+  speed:500,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',

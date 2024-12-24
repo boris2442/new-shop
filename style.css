@@ -474,6 +474,21 @@ margin-right: 30px;
   }
   .swiper .swiper-slide img{
     transition: 0.5s ease-in-out;
+    animation:animation-swiper 3s linear infinite;
+  }
+  @keyframes animation-swiper{
+    0%{
+      transform: scaleX(-1);
+
+    }
+    50%{
+      transform: scale(-1);
+      filter: grayscale(100%);
+    }
+    100%{
+      transform: scale(1);
+      filter: grayscale(0%);
+    }
   }
   .swiper .swiper-slide img:hover{
     transform: scaleX(-1);
