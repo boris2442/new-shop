@@ -458,11 +458,24 @@ padding-top: 5rem;
     height: 100vh;
     width: 100%;
     display: flex;
+margin-right: 30px;
+    flex-direction: column;
     align-items: center;
     margin: 0 auto;
+  }
+  #nouvelles-arrivages h2{
+    text-transform: uppercase;
+    font-size: clamp(20px, 4vw, 35px);
   }
   .swiper{
     width: 600px;
     
     height: 600px;
+  }
+  .swiper .swiper-slide img{
+    transition: 0.5s ease-in-out;
+  }
+  .swiper .swiper-slide img:hover{
+    transform: scaleX(-1);
+    filter: grayscale(100%);
   }
