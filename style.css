@@ -478,6 +478,8 @@ margin-right: 30px;
     height: 600px;
   }
   .swiper .swiper-slide img{
+    width: 80%;
+    height: 80%;
     transition: 0.5s ease-in-out;
     animation:animation-swiper 3s linear infinite;
   }

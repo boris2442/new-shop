@@ -94,3 +94,17 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+
+
+//   partie destinee au code scrollREveal
+
+const sr= ScrollReveal({
+    duration:1500,
+    distance:"30px",
+    reset:true,
+   origin:"top"
+
+})
+
+sr.reveal("button, .home, .about, .products, .avis, .nouvelles-arrivages, .footer-box", {interval:200})
