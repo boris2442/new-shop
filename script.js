@@ -53,7 +53,6 @@ const scrollActive=()=>{
         }
     })
 
-}
 window.addEventListener("scroll",scrollActive)
 const title=document.getElementById("title")
 const app=new Typewriter (title, {
