@@ -20,11 +20,19 @@
     --bg:#fff;
     --text:#131416;
     --shadow:2px 2px 18px rgba(14 52 54 / 15%);
+    --color-rgb:rgb(240, 234, 210);
+    --color-bg:#e2e2e2;
+    --color-rgb-hover:rgb(247, 234, 210);
+    --orange:orange;
+    --crimson:crimson;
 }
 body{
+   
     background: var(--bg);
+    position: relative;
     color:var(--text);
 }
+
 img{
     width: 100%;
 }
@@ -125,7 +133,7 @@ nav.active{
     position: absolute;
     top:-7px;
     right:-7px;
-    background: crimson;
+    background: var(--crimson);
     width: 18px;
     height: 18px;
     justify-content: center;
@@ -162,19 +170,96 @@ nav.active{
     right:1rem;
   }
 
+  
   /* #######################  
                               section home
                                            #######################   */
 
   .home{
     width: 100%;
-    min-height: 150px;
+    /* min-height: 150px; */
     display: grid;
+
     gap:1rem;
-    background: rgb(240, 234, 210);
+    min-height: 100vh;
+    background: var(--color-rgb);
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
   }
+ 
+  /* .accueil{
+    position: fixed;
+     top: 0;
+     left: 0;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      margin-bottom: 100px;
+      color:var(--bg);
+      opacity: 1;
+      transition: opacity .5s ease-out, visivility .5s ease-out;
+      visibility: visible;
+      background-color: #000;;
+    }
+    .hidden{
+      opacity: 0;
+      visibility: hidden;
+    }
+    .accueil span{
+      animation:loading 1.2s linear infinite;
+      color: #484848;
+      font-size: clamp(1.9vw, 3rem, 6vw);
+      letter-spacing: 20px;
+    }
+  
+    @keyframes loading{
+      0%{
+        color:#fff900;
+        text-shadow: 0 0 7px #fff900;
+      }
+      90%{
+           color:#484848;
+           text-shadow: none;
+      }
+      100%{
+        color:#fff900;
+        text-shadow: 0 0 7px #fff900; 
+      }
+    }
+    .accueil span:nth-child(1){
+      animation-delay:0.1s ;
+    }
+    .accueil span:nth-child(2){
+      animation-delay:0.2s ;
+    }
+    .accueil span:nth-child(3){
+      animation-delay:0.3s ;
+    }
+    .accueil span:nth-child(4){
+      animation-delay:0.4s ;
+    }
+    .accueil span:nth-child(5){
+      animation-delay:0.5s ;
+    }
+    .accueil span:nth-child(6){
+      animation-delay:0.6s ;
+    }
+    .accueil span:nth-child(7){
+      animation-delay:0.7s ;
+    }
+    .accueil span:nth-child(8){
+      animation-delay:0.8s ;
+    }
+    .accueil span:nth-child(9){
+      animation-delay:0.9s ;
+    }
+    .accueil span:nth-child(10){
+      animation-delay:s ;
+    } */
+  
   .home h1{
     font-size:clamp(30px, 5vw, 60px) ;
     letter-spacing: 1px;
@@ -267,7 +352,7 @@ color:var(--main);
     height: 250px;
     width: 100%;
     transition: 0.5s ease-in-out;
-    background: #e2e2e2;
+    background: var(--color-bg);
     object-position: center;
   }
   .products-box img:hover{
@@ -323,7 +408,7 @@ color:var(--main);
     margin-bottom: 0.5rem;
  }
  .avis-box .start .bx{
-    color:orange;
+    color:var(--orange);
  }
  .avis-box h4{
    font-size:  clamp(15px,4vw, 20px );
@@ -333,7 +418,7 @@ color:var(--main);
     margin-top: 8px;
  }
  .avis-contener .avis-box:hover{
-    background-color: rgb(247, 234, 210);
+    background-color: var(--color-rgb-hover);
  }
 
 
@@ -345,7 +430,7 @@ color:var(--main);
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(280px, auto));
      gap:1rem;
-     background-color: rgb(247, 234, 210);
+     background-color: var(--color-rgb-hover);
      padding: 2rem 1rem;
  margin-top: 60px;
  }
@@ -483,21 +568,21 @@ margin-right: 30px;
     transition: 0.5s ease-in-out;
     animation:animation-swiper 3s linear infinite;
   }
-  @keyframes animation-swiper{
+  /* @keyframes animation-swiper{
     0%{
-      transform: scaleX(-1);
+    
 
     }
     50%{
-      transform: scale(-1);
+      
       filter: grayscale(100%);
     }
     100%{
-      transform: scale(1);
+  
       filter: grayscale(0%);
     }
   }
   .swiper .swiper-slide img:hover{
     transform: scaleX(-1);
     filter: grayscale(100%);
-  }
+  } */

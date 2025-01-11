@@ -6,6 +6,8 @@ const btnSearch=document.querySelector("#btn-search");
 const btnBurger=document.querySelector("#burger-menu");
 const sections=document.querySelectorAll("section")
 
+
+
 if(window.scrollY==0){
 header.classList.toggle("active")
 }
@@ -54,6 +56,7 @@ const scrollActive=()=>{
     })
 
 window.addEventListener("scroll",scrollActive)
+
 const title=document.getElementById("title")
 const app=new Typewriter (title, {
     loop:true,
@@ -106,4 +109,5 @@ const sr= ScrollReveal({
 
 })
 
-sr.reveal("button, .home, .about, .products, .avis, .nouvelles-arrivages, .footer-box", {interval:200})
+sr.reveal(".home, .about, .products, .avis, .nouvelles-arrivages, .footer-box", {interval:200})
+
